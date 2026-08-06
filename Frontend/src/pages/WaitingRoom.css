@@ -1,0 +1,271 @@
+.waiting-page {
+    min-height: 100vh;
+    background: #f5f9fc;
+    color: #17324d;
+}
+
+
+.waiting-container {
+    min-height: calc(100vh - 76px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 70px;
+}
+
+
+.waiting-card {
+    width: 100%;
+    max-width: 680px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 55px 60px;
+    text-align: center;
+    box-shadow: 0 18px 55px rgba(30, 79, 114, 0.10);
+    border: 1px solid #e6eef4;
+}
+
+
+.waiting-icon,
+.ready-icon {
+    width: 78px;
+    height: 78px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+
+.waiting-icon {
+    background: #eaf5fb;
+}
+
+
+.ready-icon {
+    background: #e8f7f1;
+    color: #159570;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+
+.waiting-badge,
+.ready-badge {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.waiting-badge {
+    background: #eaf5fb;
+    color: #2879a8;
+}
+
+
+.ready-badge {
+    background: #e8f7f1;
+    color: #159570;
+}
+
+
+.waiting-card h1 {
+    margin: 20px auto 16px;
+    max-width: 550px;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #17324d;
+}
+
+
+.waiting-description {
+    max-width: 540px;
+    margin: 0 auto;
+    color: #647b8d;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.waiting-loader {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 32px 0 12px;
+}
+
+
+.loader-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #4d9ac4;
+    animation: waitingPulse 1.4s infinite ease-in-out;
+}
+
+
+.loader-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+.loader-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes waitingPulse {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0.65);
+        opacity: 0.4;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
+.waiting-status {
+    margin: 0 0 35px;
+    color: #7890a0;
+    font-size: 14px;
+}
+
+
+.waiting-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+    background: #f7fafc;
+    border-radius: 14px;
+    border: 1px solid #edf2f6;
+}
+
+
+.info-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+
+.info-item strong {
+    display: block;
+    color: #28465f;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+
+.info-item p {
+    margin: 0;
+    color: #7b8e9c;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+.join-session-button {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 330px;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 12px;
+    background: #287fae;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 8px 20px rgba(40, 127, 174, 0.20);
+}
+
+
+.join-session-button span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+.join-session-button:hover {
+    background: #216d97;
+    transform: translateY(-2px);
+    box-shadow: 0 11px 24px rgba(40, 127, 174, 0.26);
+}
+
+
+.ready-note {
+    margin-top: 22px;
+    color: #718796;
+    font-size: 13px;
+}
+
+
+.back-dashboard-button {
+    margin-top: 25px;
+    padding: 11px 20px;
+    border: none;
+    background: transparent;
+    color: #56809a;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+
+.back-dashboard-button:hover {
+    color: #216d97;
+}
+
+
+@media (max-width: 700px) {
+
+    .waiting-container {
+        padding: 35px 15px 50px;
+    }
+
+
+    .waiting-card {
+        padding: 40px 25px;
+        border-radius: 20px;
+    }
+
+
+    .waiting-card h1 {
+        font-size: 26px;
+    }
+
+
+    .waiting-description {
+        font-size: 14px;
+    }
+
+
+    .waiting-info {
+        grid-template-columns: 1fr;
+    }
+
+}

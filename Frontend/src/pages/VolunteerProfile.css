@@ -1,0 +1,559 @@
+.volunteer-profile-page {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4f9ff 0%,
+            #ffffff 50%,
+            #eef7ff 100%
+        );
+
+    color: #17324d;
+
+}
+
+
+.volunteer-profile-container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 50px 0 70px;
+
+}
+
+
+/* Hero */
+
+.volunteer-profile-hero {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    border: 1px solid #e5eff8;
+
+    box-shadow:
+        0 10px 35px rgba(31, 93, 150, 0.10);
+
+}
+
+
+.volunteer-avatar {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #287fd8,
+            #55b4f5
+        );
+
+    color: white;
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px rgba(45, 140, 255, 0.25);
+
+}
+
+
+.volunteer-label {
+
+    margin: 0 0 5px;
+
+    color: #2d8cff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.volunteer-profile-hero h1 {
+
+    margin: 0;
+
+    font-size: 34px;
+
+    color: #17324d;
+
+}
+
+
+.volunteer-subtitle {
+
+    margin: 8px 0 0;
+
+    color: #718399;
+
+    font-size: 16px;
+
+}
+
+
+/* Grid */
+
+.volunteer-profile-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.volunteer-profile-card {
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    border: 1px solid #e5eff8;
+
+    box-shadow:
+        0 8px 30px rgba(31, 93, 150, 0.08);
+
+}
+
+
+.values-card {
+
+    grid-column: 1 / -1;
+
+}
+
+
+/* Card heading */
+
+.volunteer-card-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.volunteer-card-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #edf6ff;
+
+    font-size: 22px;
+
+}
+
+
+.volunteer-card-heading h2 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    color: #17324d;
+
+}
+
+
+.volunteer-card-heading p {
+
+    margin: 5px 0 0;
+
+    color: #8191a5;
+
+    font-size: 14px;
+
+}
+
+
+/* Details */
+
+.volunteer-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.volunteer-detail-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 16px 18px;
+
+    background: #f7fbff;
+
+    border-radius: 12px;
+
+}
+
+
+.volunteer-detail-item span {
+
+    color: #718399;
+
+    font-size: 14px;
+
+}
+
+
+.volunteer-detail-item strong {
+
+    color: #17324d;
+
+    font-size: 15px;
+
+    text-align: right;
+
+}
+
+
+.volunteer-account-id {
+
+    max-width: 180px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* Description */
+
+.volunteer-description {
+
+    color: #65788d;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+}
+
+
+/* Contribution highlight */
+
+.volunteer-highlight {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background: #f1f8ff;
+
+    border-radius: 15px;
+
+}
+
+
+.highlight-icon {
+
+    font-size: 27px;
+
+}
+
+
+.volunteer-highlight strong {
+
+    color: #17324d;
+
+}
+
+
+.volunteer-highlight p {
+
+    margin: 5px 0 0;
+
+    color: #718399;
+
+    font-size: 14px;
+
+}
+
+
+/* Buttons */
+
+.volunteer-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+.volunteer-primary-button,
+.volunteer-secondary-button,
+.volunteer-back-button {
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+}
+
+
+.volunteer-primary-button {
+
+    background: #2d8cff;
+
+    color: white;
+
+}
+
+
+.volunteer-primary-button:hover {
+
+    background: #1976e8;
+
+    transform: translateY(-1px);
+
+}
+
+
+.volunteer-secondary-button {
+
+    background: #edf6ff;
+
+    color: #2376c9;
+
+}
+
+
+.volunteer-secondary-button:hover {
+
+    background: #dceeff;
+
+}
+
+
+/* Mission */
+
+.mission-points {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.mission-points div {
+
+    padding: 15px;
+
+    background: #f7fbff;
+
+    border-radius: 12px;
+
+    color: #536d84;
+
+    font-size: 14px;
+
+}
+
+
+.mission-points span {
+
+    color: #2d8cff;
+
+    font-weight: 700;
+
+    margin-right: 8px;
+
+}
+
+
+/* Back button */
+
+.volunteer-back-button {
+
+    margin-top: 30px;
+
+    background: transparent;
+
+    color: #3978aa;
+
+    border: 1px solid #cfe2f2;
+
+}
+
+
+.volunteer-back-button:hover {
+
+    background: #ffffff;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 750px) {
+
+    .volunteer-profile-container {
+
+        width: 92%;
+
+        padding-top: 30px;
+
+    }
+
+
+    .volunteer-profile-hero {
+
+        padding: 25px;
+
+    }
+
+
+    .volunteer-avatar {
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 30px;
+
+    }
+
+
+    .volunteer-profile-hero h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .volunteer-profile-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .values-card {
+
+        grid-column: auto;
+
+    }
+
+
+    .volunteer-profile-card {
+
+        padding: 23px;
+
+    }
+
+
+    .volunteer-detail-item {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+
+    .volunteer-detail-item strong {
+
+        text-align: left;
+
+    }
+
+
+    .mission-points {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
